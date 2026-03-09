@@ -50,8 +50,29 @@ After restarting Unreal Engine, verify the plugin is enabled by checking:
 5. Apply the recommended landscape scale provided by the plugin to ensure the terrain has accurate real-world proportions.
 
 ---
+## 5. User Interface
 
-## 5. Version History
+Import Section
+| UI Element | Description |
+|---|---|
+| Browse Button | Opens a file picker to select a .TIF file from disk |
+| Landscape Overall Resolution | Target resolution for your Unreal Landscape. Recalculates recommended scales |
+
+Heightmap Information Section
+| Field | Description |
+|---|---|
+| Min Height | Lowest elevation value in meters |
+| Max Height | Highest elevation value in meters |
+| Imported Heightmap | Visual preview of the converted texture |
+| Texture Path | Content browser path of the saved asset |
+| Texture Resolution | Width × Height of the imported texture in pixels |
+
+Landscape Settings Section
+| Field | Description |
+|---|---|
+| Recommended Scale | Provides the optimal landscape scale so your terrain matches real-world dimensions accurately in Unreal Engine 5. |
+
+## 6. Version History
 
 | Version | Date | Notes |
 |-------|------|-------|
