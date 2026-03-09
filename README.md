@@ -1,7 +1,7 @@
 # GeoData-To-Heightmap-converter-For-UE5
 
 ## 1. Overview
-The Geodata To Heightmap plugin allows users to import Tiff files and converts it into a heightmap that can be used to generate landscapes in Unreal.
+The Geodata To Heightmap plugin allows users to import Tiff files and converts it into a heightmap that can be used to generate landscapes in Unreal Engine.
 
 - **Plugin Name:** Geodata To Heightmap
 - **Current Version:** 1.0.0
@@ -40,88 +40,21 @@ The Geodata To Heightmap plugin allows users to import Tiff files and converts i
 After restarting Unreal Engine, verify the plugin is enabled by checking:
 **Edit → Plugins → Importers → Geodata To Heightmap**
 
-### 4.2 Basic Workflow
-1. Open the Content Browser.
-2. Select **Import OBJ File** from the toolbar menu.
-3. Choose an `.obj` file from disk.
-4. Configure import settings.
-5. Click **Import** to generate a Static Mesh asset.
+### 4.2 Usage Guide
+1. Open the tool.
+2. Click **Browse** from the  menu.
+3. Choose an `.Tif` file from disk.
+4. The plugin converts the selected TIF into a PNG heightmap and automatically saves it into the project.
+5. In Unreal Engine, create a new Landscape using the saved PNG heightmap.
+4. Set Landscape Resolution.
+5. Apply the recommended landscape scale provided by the plugin to ensure the terrain has accurate real-world proportions.
 
 ---
 
-## 5. User Interface
-
-### 5.1 Menu Entries
-- **Toolbar:** `Import OBJ File`
-- **Context Menu (Content Browser):** `Import → OBJ File`
-
-### 5.2 Import Dialog
-The import dialog allows users to configure scale and normal handling before importing.
-
----
-
-## 6. Usage Guide
-
-### 6.1 Importing an OBJ File
-1. Click **Import OBJ File**.
-2. Select a valid `.obj` file.
-3. Set the desired import scale.
-4. Enable or disable normal import.
-5. Confirm to create the Static Mesh.
-
-### 6.2 Import Settings
-
-| Setting | Description | Default |
-|-------|-------------|---------|
-| Import Scale | Multiplier applied to mesh size | 1.0 |
-| Import Normals | Uses normals from OBJ file | Enabled |
-| Generate Collision | Automatically creates collision | Enabled |
-
----
-
-## 7. Data Handling & Output
-- **Asset Type:** Static Mesh
-- **Naming Convention:** `<OBJFileName>_SM`
-- **Destination Folder:** Currently selected Content Browser folder
-
----
-
-## 8. Scripting / API Reference
-
-### 8.1 Blueprint Support
-This version does not expose Blueprint nodes.
-
-### 8.2 C++ API
-**Primary Class:**  
-`SimpleOBJImporter`
-
-**Key Methods:**
-- `ImportOBJ(const FString& FilePath)`
-- `CreateStaticMesh(...)`
-
----
-
-## 9. Limitations
-- Materials are not imported
-- Only triangulated geometry is supported
-- No support for OBJ groups or smoothing groups
-
----
-
-## 10. Troubleshooting
-
-| Issue | Cause | Solution |
-|-----|------|----------|
-| Mesh appears too small | Scale mismatch | Increase Import Scale |
-| Import fails | Invalid OBJ format | Re-export OBJ with triangulation |
-| Missing normals | Normals disabled | Enable Import Normals |
-
----
-
-## 11. Version History
+## 5. Version History
 
 | Version | Date | Notes |
 |-------|------|-------|
-| 1.0.0 | 2026-01-15 | Initial release |
+| 1.0.0 | 2026-03-09 | Initial release |
 
 ---
