@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: unreal
+Version: 0.1.1
+Summary: A Pythonic implementation of R package conjurer
+Home-page: https://github.com/SidharthMacherla/unreal
+Author: Sidharth Macherla
+Author-email: msidharthrasik@gmail.com
+Maintainer: Udit Choudhary
+Maintainer-email: uditchoudhary@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# unreal
+
+A pythonic implementation of R package conjurer
+
+
+
