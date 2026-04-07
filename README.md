@@ -63,7 +63,6 @@ Heightmap Information Section
 |---|---|
 | Min Height | Lowest elevation value in meters |
 | Max Height | Highest elevation value in meters |
-| Imported Heightmap | Visual preview of the converted texture |
 | Texture Path | Content browser path of the saved asset |
 | Texture Resolution | Width × Height of the imported texture in pixels |
 
@@ -72,7 +71,17 @@ Landscape Settings Section
 |---|---|
 | Recommended Scale | Provides the optimal landscape scale so your terrain matches real-world dimensions accurately in Unreal Engine 5. |
 
-## 6. Version History
+## 6. Troubleshooting
+
+| Issue                              | Cause                                      | Solution                                                                 |
+|------------------------------------|--------------------------------------------|--------------------------------------------------------------------------|
+| **XY or Z Scale shows 0 or nothing** | Landscape Resolution = 0                 | Set a valid resolution                                                   |
+| Landscape too flat or exaggerated  | Wrong Z Scale or resolution mismatch       | Match Landscape Resolution and re-apply Z Scale                          |
+| "No file was selected"             | File dialog closed without selecting       | Click Browse and select a `.tif` file                                    |
+| "Import failed"                    | Unknown Unreal error                       | Check **Output Log** for details                                |
+| "Image is not sqaure"              | Non-square TIF file used                   |Browse `.tif` file as a square resolution (e.g. 2048×2048)         |
+
+## 7. Version History
 
 | Version | Date | Notes |
 |-------|------|-------|
