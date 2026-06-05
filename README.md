@@ -80,8 +80,8 @@ Landscape Settings Section
 | "No file was selected"             | File dialog closed without selecting       | Click Browse and select a `.tif` file                                    |
 | "Import failed"                    | Unknown Unreal error                       | Check **Output Log** for details                                |
 | "Image is not sqaure"              | Non-square TIF file used                   |Browse `.tif` file as a square resolution (e.g. 2048×2048)         |
-| ModuleNotFoundError: No module named 'PIL' | Pillow is not installed or can't be found              | Install with: `pip install Pillow`                                       |
-| ModuleNotFoundError: No module named 'numpy' | NumPy is not installed or can't be found             | Install with: `pip install numpy`                                        |
+| ModuleNotFoundError: No module named 'PIL' | Pillow is not installed or can't be found              | Install with: `pip install Pillow`. After pip-installing missing libraries, copy the `PIL` folder from the installed location to the plugin-folder: `\Content\Python\Lib\site-packages`|
+| ModuleNotFoundError: No module named 'numpy' | NumPy is not installed or can't be found             | Install with: `pip install numpy`. After pip-installing missing libraries, copy the `numpy` folder from the installed location to the plugin-folder: `\Content\Python\Lib\site-packages`                                        |
 
 ## 7. Version History
 
