@@ -85,10 +85,7 @@ def import_png_to_unreal(local_path, asset_name, dest_folder="/Game/ImportedHeig
 # ---------------------------------------------------------
 LastResult = None
 
-def convert_and_import_heightmap():
-    global LastResult
-
-    result = {
+result = {
         "height_data": None,
         "min_height": None,
         "max_height": None,
@@ -99,6 +96,9 @@ def convert_and_import_heightmap():
         "import_error": False,
         "message": ""
     }
+
+def convert_and_import_heightmap():
+    global LastResult
 
     tif_path = select_tif_file()
     if not tif_path:
